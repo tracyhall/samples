@@ -1,0 +1,51 @@
+#altImages img {
+	display: block;
+	width: 25%;
+	float: left;
+	opacity: .3;
+	cursor: pointer;
+}
+
+#altImages img.active {
+	opacity: 1;
+	cursor: default;
+}
+
+li a {
+	cursor: pointer;
+}
+
+li a.active {
+	font-weight: bold;
+	cursor: default;
+}
+
+li a.active:hover {
+	text-decoration: none;
+	color: #337ab7;
+}
+
+#zoomWrapper {
+	min-height: 650px;
+}
+
+#zoomContainer {
+	position: relative;
+	width: 360px;
+	height: 600px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+#zoomContainer img:first-child {
+	width: 100%;
+}
+
+#spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -16px;
+	margin-left: -16px;
+	display: none;
+}

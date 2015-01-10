@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simplified zoom/slider/switcher app</title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<header class="header"><h3 class="text-muted">Zoom Example</h3></header>
+<p>Given: Multiple image sets with an initial main image and zero or more alternate images</p>
+<p>On desktop: On selection of an image set, populate the main and alternate images into the layout. On mousewheel over the main image, zoom in or out. On click of an alternate image, reset the zoom level to 0 and change the source of the main image.</p>
+<p>On mobile: display main and alternate images in a slider with swipe capability. On tap of image, expand it to fill the viewport and allow gestures for pinch and zoom and dragging.</p>
+<hr />
+<div class="row">
+	<div class="col-md-3">
+		<h4 class="text-muted">Image Sets</h4>
+		<ul id="switcher">
+			<li><a data-set="animals" class="active">Animals</a></li>
+			<li><a data-set="abstract">Abstract</a></li>
+			<li><a data-set="cats">Cats</a></li>
+		</ul>
+	</div>
+	<div id="zoomWrapper" class="col-md-6">
+		<h4 class="text-muted">Main Image</h4>
+		<div id="zoomContainer">
+			<img src="http://lorempixel.com/360/600/animals/1">
+			<img id="spinner" src="spinner.gif">
+		</div>
+	</div>
+	<div id="altImages" class="col-md-3">
+		<h4 class="text-muted">Alternate Images</h4>
+		<img src="http://lorempixel.com/72/120/animals/1" class="active">
+		<img src="http://lorempixel.com/72/120/animals/2">
+		<img src="http://lorempixel.com/72/120/animals/3">
+		<img src="http://lorempixel.com/72/120/animals/4">
+	</div>
+</div>
+<footer class="footer"><p>&copy; Tracy Schuler, 2015</p></footer>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+<script src="zoom.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
