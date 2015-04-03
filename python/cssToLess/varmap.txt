@@ -1,0 +1,2 @@
+#fff, @white
+#283744, @navy

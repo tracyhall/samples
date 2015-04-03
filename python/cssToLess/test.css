@@ -1,0 +1,45 @@
+@namespace url(XML-namespace-URL);
+@charset "UTF-8"; 
+@import 'example.css';
+
+@font-face {
+  font-family: Gotham-Book;
+  src: url('/fonts//Gotham-BookIta.otf');
+  font-style: italic;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background: #455868;
+    border-bottom: 2px solid #283744;
+}
+nav li {
+    width: 600px;
+    height: 40px;
+}
+nav li a {
+    color: #fff;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+}
+
+nav li a, .tester {
+    font-weight: bold;
+}
+
+@media screen {
+    #logo {
+        top: 2px;
+        font-size: 43px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        top: 2px;
+        font-size: 43px;
+        width: 150px;
+    }
+}
